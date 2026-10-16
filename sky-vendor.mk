@@ -878,6 +878,7 @@ PRODUCT_PACKAGES += \
     libminksocket_vendor \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
+    libmisight \
     libmlipay \
     libmlipay@1.1 \
     libmmcamera_bestats \
