@@ -164,7 +164,7 @@ cc_prebuilt_library_shared {
                 "libhardware",
                 "libbase",
                 "libbinder",
-                "vendor.xiaomi.hardware.displayfeature@1.0_vendor",
+                "vendor.xiaomi.hardware.displayfeature@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -198,7 +198,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhwbinder",
                 "libcrypto",
-                "vendor.xiaomi.hardware.mtdservice@1.0_vendor",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
                 "android.hardware.secure_element@1.0",
                 "libGPTEE_vendor",
                 "vendor.qti.esepowermanager@1.0",
@@ -3959,35 +3959,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "com.fingerprints.extension@1.0_vendor",
-    stem: "com.fingerprints.extension@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/com.fingerprints.extension@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.chiusecaseselector",
     owner: "xiaomi",
     strip: {
@@ -6009,7 +5980,7 @@ cc_prebuilt_library_shared {
                 "libaudiocloudctrl",
                 "libmisight",
                 "vendor.qti.hardware.pal@1.0-impl",
-                "vendor.qti.hardware.pal@1.0_vendor",
+                "vendor.qti.hardware.pal@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -6229,7 +6200,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libhidltransport",
                 "android.hardware.biometrics.fingerprint@2.1",
-                "com.fingerprints.extension@1.0_vendor",
+                "com.fingerprints.extension@1.0",
                 "libQSEEComAPI",
                 "libion",
                 "libdmabufheap",
@@ -9995,7 +9966,7 @@ cc_prebuilt_library_shared {
                 "libhidltransport",
                 "libhidlbase",
                 "libgui_vendor",
-                "vendor.xiaomi.hardware.displayfeature@1.0_vendor",
+                "vendor.xiaomi.hardware.displayfeature@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -12275,8 +12246,8 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmlipay.so",
             ],
             shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0_vendor",
-                "vendor.xiaomi.hardware.mtdservice@1.0_vendor",
+                "vendor.xiaomi.hardware.mlipay@1.0",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -12307,9 +12278,9 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libmlipay@1.1.so",
             ],
             shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0_vendor",
-                "vendor.xiaomi.hardware.mlipay@1.1_vendor",
-                "vendor.xiaomi.hardware.mtdservice@1.0_vendor",
+                "vendor.xiaomi.hardware.mlipay@1.0",
+                "vendor.xiaomi.hardware.mlipay@1.1",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
                 "liblog",
                 "libcutils",
                 "libutils",
@@ -13384,7 +13355,7 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libbase",
-                "vendor.qti.hardware.pal@1.0_vendor",
+                "vendor.qti.hardware.pal@1.0",
                 "libc++",
                 "libc",
                 "libm",
@@ -18556,38 +18527,9 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.allocator@4.0",
                 "vendor.qti.hardware.display.mapper@4.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
-                "vendor.qti.hardware.camera.postproc@1.0_vendor",
+                "vendor.qti.hardware.camera.postproc@1.0",
                 "libz",
                 "libclang_rt.ubsan_standalone",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.camera.postproc@1.0_vendor",
-    stem: "vendor.qti.hardware.camera.postproc@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -19449,37 +19391,8 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libhardware",
                 "libbase",
-                "vendor.qti.hardware.pal@1.0_vendor",
+                "vendor.qti.hardware.pal@1.0",
                 "libar-pal",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.pal@1.0_vendor",
-    stem: "vendor.qti.hardware.pal@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.pal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -21849,123 +21762,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.displayfeature@1.0_vendor",
-    stem: "vendor.xiaomi.hardware.displayfeature@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.mlipay@1.0_vendor",
-    stem: "vendor.xiaomi.hardware.mlipay@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.mlipay@1.1_vendor",
-    stem: "vendor.xiaomi.hardware.mlipay@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0_vendor",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.xiaomi.hardware.mtdservice@1.0_vendor",
-    stem: "vendor.xiaomi.hardware.mtdservice@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "vendor_lib_rfsa_adsp_bm2n31_bin",
     filename: "bm2n31.bin",
@@ -23575,9 +23371,9 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/mlipayd@1.1",
             ],
             shared_libs: [
-                "vendor.xiaomi.hardware.mlipay@1.0_vendor",
-                "vendor.xiaomi.hardware.mlipay@1.1_vendor",
-                "vendor.xiaomi.hardware.mtdservice@1.0_vendor",
+                "vendor.xiaomi.hardware.mlipay@1.0",
+                "vendor.xiaomi.hardware.mlipay@1.1",
+                "vendor.xiaomi.hardware.mtdservice@1.0",
                 "liblog",
                 "libcutils",
                 "libutils",

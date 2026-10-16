@@ -628,7 +628,6 @@ PRODUCT_PACKAGES += \
     camx.provider@2.5-legacy \
     camx.provider@2.6-legacy \
     camx.provider@2.7-legacy \
-    com.fingerprints.extension@1.0_vendor \
     com.qti.chiusecaseselector \
     com.qti.feature2.anchorsync \
     com.qti.feature2.demux \
@@ -1078,7 +1077,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    vendor.qti.hardware.camera.postproc@1.0_vendor \
     vendor.qti.hardware.data.cne.internal.api@1.0_vendor \
     vendor.qti.hardware.data.cne.internal.constants@1.0_vendor \
     vendor.qti.hardware.data.cne.internal.server@1.0_vendor \
@@ -1108,7 +1106,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.limits@1.1_vendor \
     vendor.qti.hardware.mwqemadapter@1.0_vendor \
     vendor.qti.hardware.pal@1.0-impl \
-    vendor.qti.hardware.pal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.0_vendor \
     vendor.qti.hardware.qccsyshal@1.1_vendor \
     vendor.qti.hardware.qccvndhal@1.0-halimpl \
@@ -1186,10 +1183,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdsys-V1-ndk_platform \
     vendor.qti.qspmhal@1.0-impl \
-    vendor.xiaomi.hardware.displayfeature@1.0_vendor \
-    vendor.xiaomi.hardware.mlipay@1.0_vendor \
-    vendor.xiaomi.hardware.mlipay@1.1_vendor \
-    vendor.xiaomi.hardware.mtdservice@1.0_vendor \
     vendor_lib_rfsa_adsp_bm2n31_bin \
     vendor_lib_rfsa_adsp_bm2n32_bin \
     vendor_lib_rfsa_adsp_bm2n33_bin \
