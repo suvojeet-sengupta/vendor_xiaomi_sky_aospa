@@ -803,7 +803,6 @@ PRODUCT_PACKAGES += \
     libcvp2_1 \
     libdataitems \
     libdiag \
-    libdisplayconfig.qti \
     libdisplayfeature \
     libdisplayfeatureservice \
     libdpmqmihal \
@@ -974,9 +973,6 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdedrm \
-    libsdmcore \
-    libsdmutils \
     libsdsprpc \
     libsensorslog \
     libsfeShiftExtrapolation \
@@ -1256,7 +1252,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1-service \
     vendor.qti.hardware.AGMIPC@1.0-service \
     vendor.qti.hardware.capabilityconfigstore@1.0-service \
-    vendor.qti.hardware.display.composer-service_sky \
     vendor.qti.hardware.limits@1.1-service \
     vendor.qti.hardware.qseecom@1.0-service \
     vendor.qti.hardware.qteeconnector@1.0-service \
