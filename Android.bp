@@ -6190,7 +6190,7 @@ cc_prebuilt_library_shared {
                 "libstagefright_foundation",
                 "libhidltransport",
                 "libhidlbase",
-                "libsdm-disp-vndapis_sky",
+                "libsdm-disp-vndapis",
                 "vendor.display.config@2.0",
                 "libdisplayconfig.qti",
                 "android.frameworks.sensorservice@1.0",
@@ -13516,41 +13516,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libqc2filter_sky",
-    stem: "libqc2filter",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libqc2filter.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "liblog",
-                "libcodec2_vndk",
-                "libqcodec2_base",
-                "libqcodec2_utils",
-                "libqcodec2_basecodec",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "libqc2filter",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libqcbor",
     owner: "xiaomi",
     strip: {
@@ -15419,40 +15384,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libsdm-disp-vndapis_sky",
-    stem: "libsdm-disp-vndapis",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdm-disp-vndapis.so",
-            ],
-            shared_libs: [
-                "libdisplaydebug",
-                "libqservice",
-                "libbinder",
-                "libcutils",
-                "libutils",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "libsdm-disp-vndapis",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsdmcore",
     owner: "xiaomi",
     strip: {
@@ -15481,43 +15412,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libsdmextension_sky",
-    stem: "libsdmextension",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libsdmextension.so",
-            ],
-            shared_libs: [
-                "libdisplaydebug",
-                "libsdmutils",
-                "libdisplayqos",
-                "libsdm-color",
-                "libdisplayskuutils",
-                "libtinyxml2_1",
-                "libtestutils",
-                "libcrypto",
-                "libssl",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "libsdmextension",
-    ],
     soc_specific: true,
 }
 
@@ -16517,34 +16411,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libvideoutils_sky",
-    stem: "libvideoutils",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libvideoutils.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "libvideoutils",
-    ],
     soc_specific: true,
 }
 
@@ -22757,44 +22623,6 @@ cc_prebuilt_binary {
         none: true,
     },
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "cnss-daemon_sky",
-    stem: "cnss-daemon",
-    owner: "xiaomi",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/cnss-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libnl",
-                "libcld80211",
-                "libperipheral_client",
-                "libmdmdetect",
-                "libqmiservices",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    check_elf_files: false,
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    overrides: [
-        "cnss-daemon",
-    ],
     soc_specific: true,
 }
 

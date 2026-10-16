@@ -915,7 +915,6 @@ PRODUCT_PACKAGES += \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
-    libqc2filter_sky \
     libqcbor \
     libqcc_file_agent \
     libqcci_legacy \
@@ -976,9 +975,7 @@ PRODUCT_PACKAGES += \
     libscveObjectTracker \
     libscveObjectTracker_stub \
     libsdedrm \
-    libsdm-disp-vndapis_sky \
     libsdmcore \
-    libsdmextension_sky \
     libsdmutils \
     libsdsprpc \
     libsensorslog \
@@ -1015,7 +1012,6 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     libtrustedapploader \
     libubifocus \
-    libvideoutils_sky \
     libwfdaac_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
@@ -1243,7 +1239,6 @@ PRODUCT_PACKAGES += \
     adsprpcd \
     cdsprpcd \
     cnd \
-    cnss-daemon_sky \
     diag-router \
     displayfeature \
     dpmQmiMgr \
