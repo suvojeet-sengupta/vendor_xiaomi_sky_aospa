@@ -7,6 +7,7 @@ soong_namespace {
         "device/xiaomi/sky",
         "hardware/xiaomi",
         "vendor/qcom/common/vendor/adreno/s",
+        "vendor/qcom/common/vendor/display",
         "vendor/qcom/common/vendor/display/5.10",
         "vendor/qcom/common/vendor/media/5.10",
         "vendor/qcom/common/vendor/perf",
@@ -6195,8 +6196,8 @@ cc_prebuilt_library_shared {
                 "android.frameworks.sensorservice@1.0",
                 "libtinyxml2",
                 "libgui_vendor",
-                "vendor.display.postproc@1.0_sky",
-                "vendor.display.color@1.0_sky",
+                "vendor.display.postproc@1.0_vendor",
+                "vendor.display.color@1.0_vendor",
                 "libc++",
                 "libc",
                 "libm",
@@ -18067,322 +18068,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.0_sky",
-    stem: "vendor.display.color@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.0",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.1_sky",
-    stem: "vendor.display.color@1.1",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.1.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.1",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.2_sky",
-    stem: "vendor.display.color@1.2",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.2.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "vendor.display.color@1.1_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.2",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.3_sky",
-    stem: "vendor.display.color@1.3",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.3.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "vendor.display.color@1.1_sky",
-                "vendor.display.color@1.2_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.3",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.4_sky",
-    stem: "vendor.display.color@1.4",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.4.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "vendor.display.color@1.1_sky",
-                "vendor.display.color@1.2_sky",
-                "vendor.display.color@1.3_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.4",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.5_sky",
-    stem: "vendor.display.color@1.5",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.5.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "vendor.display.color@1.1_sky",
-                "vendor.display.color@1.2_sky",
-                "vendor.display.color@1.3_sky",
-                "vendor.display.color@1.4_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.5",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.6_sky",
-    stem: "vendor.display.color@1.6",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.6.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "vendor.display.color@1.1_sky",
-                "vendor.display.color@1.2_sky",
-                "vendor.display.color@1.3_sky",
-                "vendor.display.color@1.4_sky",
-                "vendor.display.color@1.5_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.6",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.color@1.7_sky",
-    stem: "vendor.display.color@1.7",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.color@1.7.so",
-            ],
-            shared_libs: [
-                "vendor.display.color@1.0_sky",
-                "vendor.display.color@1.1_sky",
-                "vendor.display.color@1.2_sky",
-                "vendor.display.color@1.3_sky",
-                "vendor.display.color@1.4_sky",
-                "vendor.display.color@1.5_sky",
-                "vendor.display.color@1.6_sky",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.color@1.7",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.display.postproc@1.0_sky",
-    stem: "vendor.display.postproc@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.display.postproc@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.display.postproc@1.0",
-    ],
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.libdpmctmgr",
     owner: "xiaomi",
     strip: {
@@ -19002,35 +18687,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     check_elf_files: false,
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.AGMIPC@1.0_vendor",
-    stem: "vendor.qti.hardware.AGMIPC@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
     prefer: true,
     soc_specific: true,
 }
@@ -22426,7 +22082,7 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libutils",
-                "vendor.qti.qspmhal@1.0_sky",
+                "vendor.qti.qspmhal@1.0_vendor",
                 "android.hidl.allocator@1.0",
                 "android.hidl.memory@1.0",
                 "libhidlbase",
@@ -22442,38 +22098,6 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal@1.0_sky",
-    stem: "vendor.qti.qspmhal@1.0",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    overrides: [
-        "vendor.qti.qspmhal@1.0",
-    ],
     soc_specific: true,
 }
 
@@ -25155,7 +24779,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service",
             ],
             shared_libs: [
-                "vendor.qti.qspmhal@1.0_sky",
+                "vendor.qti.qspmhal@1.0_vendor",
                 "vendor.qti.qspmhal@1.0-impl",
                 "libhidlbase",
                 "liblog",

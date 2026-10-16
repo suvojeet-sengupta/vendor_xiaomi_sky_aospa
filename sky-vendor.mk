@@ -1065,15 +1065,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     libshoebox \
     libvolumelistener \
-    vendor.display.color@1.0_sky \
-    vendor.display.color@1.1_sky \
-    vendor.display.color@1.2_sky \
-    vendor.display.color@1.3_sky \
-    vendor.display.color@1.4_sky \
-    vendor.display.color@1.5_sky \
-    vendor.display.color@1.6_sky \
-    vendor.display.color@1.7_sky \
-    vendor.display.postproc@1.0_sky \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -1092,7 +1083,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.esepowermanager@1.1 \
     vendor.qti.gnss-V3-ndk_platform \
     vendor.qti.hardware.AGMIPC@1.0-impl \
-    vendor.qti.hardware.AGMIPC@1.0_vendor \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
     vendor.qti.hardware.cacert@1.0 \
@@ -1205,7 +1195,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdsys-V1-ndk_platform \
     vendor.qti.qspmhal@1.0-impl \
-    vendor.qti.qspmhal@1.0_sky \
     vendor.xiaomi.hardware.displayfeature@1.0_vendor \
     vendor.xiaomi.hardware.mlipay@1.0_vendor \
     vendor.xiaomi.hardware.mlipay@1.1_vendor \
