@@ -725,20 +725,8 @@ PRODUCT_PACKAGES += \
     libTrustedUI \
     libTrustedUITZ \
     libTrustedUIVM \
-    lib_bt_aptx \
-    lib_bt_ble \
-    lib_bt_bundle \
     libadm \
-    libagm \
-    libagm_compress_plugin \
-    libagm_mixer_plugin \
-    libagm_pcm_plugin \
-    libagmclient \
     libagmmixer \
-    libar-acdb \
-    libar-gpr \
-    libar-gsl \
-    libar-pal \
     libarcsoft_beautyshot \
     libarcsoft_dualcam_refocus_image \
     libarcsoft_dualcam_refocus_video \
@@ -751,12 +739,10 @@ PRODUCT_PACKAGES += \
     libasn1cper \
     libasn1crt \
     libasn1crtx \
-    libats \
     libaudio_log_utils \
     libaudiocloudctrl \
     libbase64 \
     libbatching \
-    libbatterylistener \
     libbitmlengine \
     libbitmlenginev2 \
     libbluetooth_audio_session_qti \
@@ -815,7 +801,6 @@ PRODUCT_PACKAGES += \
     libeva \
     libfastcvdsp_stub \
     libfastcvopt \
-    libfmpal \
     libgarden \
     libgarden_haltests_e2e \
     libgdtap \
@@ -858,8 +843,6 @@ PRODUCT_PACKAGES += \
     liblowi_common \
     liblowi_wifihal \
     liblqe \
-    liblx-ar_util \
-    liblx-osal \
     libmasc \
     libmcs \
     libmctfengine_stub \
@@ -909,7 +892,6 @@ PRODUCT_PACKAGES += \
     libops \
     libos \
     libpal_net_if \
-    libpalclient \
     libpdmapper \
     libpdnotifier \
     libperipheral_client \
@@ -982,7 +964,6 @@ PRODUCT_PACKAGES += \
     libsn100u_fw_cn \
     libsn100u_fw_jp \
     libsn220u_fw \
-    libsndcardparser \
     libsns_api \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
@@ -1050,11 +1031,7 @@ PRODUCT_PACKAGES += \
     sensors.touch \
     libasphere \
     libmisoundfx \
-    libqcompostprocbundle \
-    libqcomvisualizer \
-    libqcomvoiceprocessing \
     libshoebox \
-    libvolumelistener \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
