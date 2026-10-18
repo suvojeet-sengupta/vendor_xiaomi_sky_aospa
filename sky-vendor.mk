@@ -542,6 +542,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/lib64/rfs/dsp/bm2n56.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/rfs/dsp/bm2n56.bin
 
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl_prebuilt \
     btaudio_offload_if \
     com.qti.flash.lm3644 \
     com.qti.ois.bu63169gwz \
@@ -672,6 +673,9 @@ PRODUCT_PACKAGES += \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
     libEseUtils \
+    libaudiocorehal.default \
+    libaudiocorehal.qti \
+    libaudioeffecthal.qti \
     libqtigatekeeper \
     mbedtls_qti \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
@@ -723,10 +727,15 @@ PRODUCT_PACKAGES += \
     libaodoptfeature \
     libapengine \
     libappclassifier \
+    libar-pal \
+    libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_log_utils \
     libaudiocloudctrl \
+    libaudioplatformconverter.qti \
+    libaudioserviceexampleimpl \
     libbatching \
     libbitmlenginev2 \
+    libbluetooth_audio_session_aidl_prebuilt \
     libbluetooth_audio_session_aidl_qti \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
