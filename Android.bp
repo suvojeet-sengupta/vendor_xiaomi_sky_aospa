@@ -18377,6 +18377,46 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.qti.gnss-service",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.gnss-service.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "vendor.qti.gnss-V3-ndk_platform",
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libloc_core",
+                "libgps.utils",
+                "liblocation_api",
+                "liblocationservice_glue",
+                "liblbs_core",
+                "libdataitems",
+                "liblocationservice",
+                "libxtadapter",
+                "libizat_core",
+                "libizat_client_api",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.qti.hardware.AGMIPC@1.0-impl",
     owner: "xiaomi",
     strip: {
