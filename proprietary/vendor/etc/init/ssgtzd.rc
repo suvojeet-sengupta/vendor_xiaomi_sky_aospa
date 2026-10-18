@@ -15,8 +15,8 @@ on early-boot
 service vendor.ssgtzd /vendor/bin/ssgtzd
     class late_start
     user system
-    group system
+    group system oem_2912 wakelock
+    capabilities WAKE_ALARM BLOCK_SUSPEND
     disabled
-    socket ssgtzd stream 0660 system inet
-    socket ssgtzd_opener stream 0660 system inet
-    socket qwes_ipc stream 0660 system inet
+    socket ssgtzd stream 0660 system oem_2912
+    socket ssgtzd_opener stream 0660 system system

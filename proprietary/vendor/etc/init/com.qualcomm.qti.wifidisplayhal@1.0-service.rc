@@ -4,8 +4,14 @@
 # Confidential and Proprietary - Qualcomm Technologies, Inc.
 #
 service wifidisplayhalservice /vendor/bin/wifidisplayhalservice
+  interface aidl vendor.qti.hardware.wifidisplaysession_aidl.IWifiDisplaySession/default
+  interface aidl vendor.qti.hardware.wifidisplaysession_aidl.IWifiDisplaySessionAudioTrack/default
+  interface aidl vendor.qti.hardware.wifidisplaysession_aidl.IWifiDisplaySessionImageTrack/default
+  interface aidl vendor.qti.hardware.wifidisplaysession_aidl.IWifiDisplaySessionVideoTrack/default
   class main
   user system
   group inet input audio media uhid
   capabilities NET_RAW
+  disabled
+  oneshot
 

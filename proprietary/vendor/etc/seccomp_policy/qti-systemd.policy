@@ -32,6 +32,7 @@ readlinkat: 1
 newfstatat: 1
 mremap: 1
 fstatfs: 1
+fstatfs64: 1
 pread64: 1
 rt_sigprocmask: 1
 rt_sigaction: 1
@@ -78,6 +79,3 @@ getdents64: 1
 getsockname: 1
 recvfrom: 1
 madvise: 1
-unlinkat: 1
-sendto: 1
-getsockopt: 1

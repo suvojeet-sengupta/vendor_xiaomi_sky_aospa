@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Qualcomm Technologies, Inc.
+# Copyright (c) 2021 - 2023 Qualcomm Technologies, Inc.
 # All Rights Reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc
 #
@@ -66,3 +66,23 @@ lseek: 1
 recvfrom: 1
 tgkill: 1
 madvise: 1
+setpriority: 1
+nanosleep: 1
+getsockopt: 1
+
+# added for netlink
+setsockopt: 1
+bind: 1
+sendmsg: 1
+recvmsg: 1
+
+# added for get gid
+getgid: 1
+
+# added for db write
+geteuid: 1
+pwrite64: 1
+fdatasync: 1
+unlinkat: 1
+fchmod: 1
+ftruncate: 1

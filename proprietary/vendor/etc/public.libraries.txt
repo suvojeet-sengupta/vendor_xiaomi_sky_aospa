@@ -4,3 +4,4 @@ libcdsprpc.so
 libsdsprpc.so
 libfastcvopt.so
 libOpenCL.so
+libanc_single_bokeh.so

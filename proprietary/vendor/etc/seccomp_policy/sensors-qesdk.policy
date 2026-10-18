@@ -33,7 +33,6 @@ rt_sigprocmask: 1
 mremap: 1
 fstatfs: 1
 getuid: 1
-gettid: 1
 pread64: 1
 writev: 1
 rt_sigaction: 1
@@ -67,3 +66,5 @@ getpid: 1
 ppoll: 1
 rt_sigtimedwait: 1
 madvise: 1
+# added for get tid
+gettid: 1

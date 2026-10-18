@@ -7,3 +7,10 @@
 on early-boot
     write /sys/kernel/icnss/wlan_en_delay 1000
     write /sys/kernel/icnss/wpss_boot 1
+
+service wifi_qos_daemon /vendor/bin/wifi_qos_daemon
+    class late_start
+    user wifi
+    group wifi inet net_admin oem_2912 system
+    capabilities NET_ADMIN
+    oneshot

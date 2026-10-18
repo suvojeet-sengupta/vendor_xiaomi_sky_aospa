@@ -1,6 +1,7 @@
-# Copyright (c) 2020-2021 Qualcomm Technologies, Inc.
-# All Rights Reserved.
+# Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+# All rights reserved.
 # Confidential and Proprietary - Qualcomm Technologies, Inc
+#
 #
 # Not a contribution.
 #
@@ -105,3 +106,6 @@ dup: 1
 process_vm_readv: 1
 rt_tgsigqueueinfo: 1
 sysinfo: 1
+shutdown: 1
+gettimeofday: 1
+kill: 1

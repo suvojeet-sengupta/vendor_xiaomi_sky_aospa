@@ -1,6 +1,6 @@
 {
   "config": {
-    "hw_platform": [ "MTP", "Dragon", "Surf","QRD","HDK"
+    "hw_platform": [ "MTP", "Dragon", "Surf","QRD","HDK", "QAR"
     ],
     "soc_id": ["300", "301","591"]
   },

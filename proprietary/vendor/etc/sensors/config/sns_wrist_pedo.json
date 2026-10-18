@@ -1,7 +1,7 @@
 {
   "config": {
     "hw_platform": [
-      "MTP", "Dragon", "Surf", "QRD" ],
+      "MTP", "Dragon", "Surf", "QRD", "QAR" ],
     "soc_id": ["300", "301","591"]
   },
   "sns_wrist_pedo": {

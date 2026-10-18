@@ -77,6 +77,10 @@ setitimer: 1
 pselect6: 1
 getsockname: 1
 recvfrom: 1
+#crash dump policy for Android T
+sysinfo: 1
+getdents64: 1
+#policy end
 ppoll: 1
 socketpair: 1
 setsockopt: 1
