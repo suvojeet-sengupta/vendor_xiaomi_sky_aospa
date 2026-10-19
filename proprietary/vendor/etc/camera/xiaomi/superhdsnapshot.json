@@ -1,35 +1,35 @@
 {
-    "PipelineName": "SuperHdSnapshot",
-    "NodesList": {
-      "Node": [
-        {
-          "NodeName": "com.xiaomi.plugin.morphohdr",
-          "NodeInstance":"HDRInstance"
-        }
-      ]
-    },
-    "PortLinkages": {
-      "Link": [
-        {
-          "SrcPort": {
-            "PortId": 0,
-            "NodeInstance": "SourceBuffer"
-          },
-          "DstPort": {
-            "PortId": 0,
-            "NodeInstance": "HDRInstance"
-          }
+  "PipelineName": "SuperHdSnapshot",
+  "NodesList": {
+    "Node": [
+      {
+        "NodeName": "com.xiaomi.plugin.memcpy",
+        "NodeInstance":"MemcpyInstance"
+      }
+    ]
+  },
+  "PortLinkages": {
+    "Link": [
+    {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "SourceBuffer"
         },
-        {
-          "SrcPort": {
-            "PortId": 0,
-            "NodeInstance": "HDRInstance"
-          },
-          "DstPort": {
-            "PortId": 0,
-            "NodeInstance":"SinkBuffer"
-          }
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "MemcpyInstance"
         }
-      ]
-    }
+      },
+       {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "MemcpyInstance"
+        },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance": "SinkBuffer"
+        }
+      }
+    ]
   }
+}
