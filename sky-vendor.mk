@@ -914,12 +914,6 @@ PRODUCT_PACKAGES += \
     libqseed3 \
     libqsocket \
     libqti-appclassifier \
-    libqti-jankrescue \
-    libqti-lllite \
-    libqti-perfextn-intf \
-    libqti-s3tf \
-    libqti-scenariod \
-    libqti-sslite \
     libqtikeymaster4 \
     libqtikeymint \
     librcc \
