@@ -653,13 +653,6 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.qti.dpm.api@1.0_vendor \
     com.qualcomm.qti.mcx.usecase.extension \
-    com.xiaomi.plugin.capbokeh \
-    com.xiaomi.plugin.hdr \
-    com.xiaomi.plugin.memcpy \
-    com.xiaomi.plugin.mibokeh \
-    com.xiaomi.plugin.skinbeautifier \
-    com.xiaomi.plugin.superlowlight \
-    com.xiaomi.plugin.swflip \
     deviceInfoServiceModuleNr \
     eglSubDriverAndroid \
     libEGL_adreno \
@@ -716,7 +709,6 @@ PRODUCT_PACKAGES += \
     libGPTEE_vendor \
     libGPreqcancel \
     libGPreqcancel_svc \
-    libMNN \
     libOpenCL \
     libOpenCL_adreno \
     libQSEEComAPI \
@@ -735,13 +727,6 @@ PRODUCT_PACKAGES += \
     libapengine \
     libappclassifier \
     libar-pal \
-    libarcsoft_beautyshot \
-    libarcsoft_dualcam_refocus_image \
-    libarcsoft_high_dynamic_range \
-    libarcsoft_low_light_hdr \
-    libarcsoft_portrait_lighting \
-    libarcsoft_portrait_lighting_c \
-    libarcsoft_supernight \
     libaudio_aidl_conversion_common_ndk_prebuilt \
     libaudio_log_utils \
     libaudiocloudctrl \
@@ -787,8 +772,6 @@ PRODUCT_PACKAGES += \
     libcneqmiutils \
     libcolor-default \
     libcom.qti.chinodeutils \
-    libcom.xiaomi.metadatautils \
-    libcom.xiaomi.pluginutils \
     libconfigdb \
     libcpion \
     libcv_common \
@@ -880,14 +863,8 @@ PRODUCT_PACKAGES += \
     libmemutils \
     libmeters-ns \
     libmeters \
-    libmialgo_ai_vision \
-    libmialgo_aio_seg \
-    libmialgo_utils \
-    libmialgoengine \
-    libmialgoengine2 \
     libminkdescriptor \
     libminksocket_vendor \
-    libmiphone_capture_bokeh \
     libmisight \
     libmmcamera_bestats \
     libmmcamera_cac \
@@ -1007,7 +984,6 @@ PRODUCT_PACKAGES += \
     libqtikeymint \
     librcc \
     librcmask \
-    librelight_only \
     libril-db \
     libril-legacy \
     libril-qc-ltedirectdisc \
