@@ -25,7 +25,7 @@
         },
         "DstPort": {
           "PortId": 0,
-          "NodeInstance":  "SkinInstance"
+          "NodeInstance": "SkinInstance"
         }
       },
       {

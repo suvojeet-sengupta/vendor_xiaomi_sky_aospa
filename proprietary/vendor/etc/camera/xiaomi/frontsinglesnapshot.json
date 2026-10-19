@@ -3,9 +3,13 @@
   "NodesList": {
     "Node": [
       {
-          "NodeName": "com.xiaomi.plugin.hdr",
+          "NodeName": "com.xiaomi.plugin.morphohdr",
           "NodeInstance": "HdrInstance"
-        },
+      },
+	  {
+          "NodeName": "com.xiaomi.plugin.jiiganfacesr",
+          "NodeInstance": "FacesrInstance"
+      },
       {
         "NodeName": "com.xiaomi.plugin.skinbeautifier",
         "NodeInstance": "Skinnstance"
@@ -24,15 +28,25 @@
           "NodeInstance": "SourceBuffer"
         },
         "DstPort": {
-            "PortId": 0,
-            "NodeInstance":"HdrInstance"
-          }
+          "PortId": 0,
+          "NodeInstance":"HdrInstance"
+        }
+      },
+	  {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "HdrInstance"
         },
-        {
-          "SrcPort": {
-            "PortId": 0,
-            "NodeInstance": "HdrInstance"
-          },
+        "DstPort": {
+          "PortId": 0,
+          "NodeInstance":"FacesrInstance"
+        }
+      },
+      {
+        "SrcPort": {
+          "PortId": 0,
+          "NodeInstance": "FacesrInstance"
+        },
         "DstPort": {
           "PortId": 0,
           "NodeInstance":"Skinnstance"

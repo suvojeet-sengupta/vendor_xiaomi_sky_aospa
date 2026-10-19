@@ -3,27 +3,27 @@
   "NodesList": {
     "Node": [
       {
-        "NodeName": "com.xiaomi.plugin.ldc",
-        "NodeInstance": "LdcInstance"
+        "NodeName": "com.xiaomi.plugin.memcpy",
+        "NodeInstance":"MemcpyInstance"
       }
     ]
   },
   "PortLinkages": {
     "Link": [
-      {
+    {
         "SrcPort": {
           "PortId": 0,
           "NodeInstance": "SourceBuffer"
         },
         "DstPort": {
           "PortId": 0,
-          "NodeInstance": "LdcInstance"
+          "NodeInstance": "MemcpyInstance"
         }
       },
-      {
+       {
         "SrcPort": {
           "PortId": 0,
-          "NodeInstance": "LdcInstance"
+          "NodeInstance": "MemcpyInstance"
         },
         "DstPort": {
           "PortId": 0,
