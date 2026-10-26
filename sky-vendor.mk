@@ -54,7 +54,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/odm/etc/permissions/sku_hcesimese/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_hcesimese/com.android.nfc_extras.xml \
     vendor/xiaomi/sky/proprietary/odm/etc/permissions/sku_hcesimese/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_hcesimese/com.nxp.mifare.xml \
     vendor/xiaomi/sky/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/xiaomi/sky/proprietary/recovery/root/vendor/firmware/focaltech_8725_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_8725_fw.bin \
     vendor/xiaomi/sky/proprietary/recovery/root/vendor/firmware/focaltech_ft8720_hx.ini:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ft8720_hx.ini \
+    vendor/xiaomi/sky/proprietary/recovery/root/vendor/firmware/focaltech_ft8725_hx.ini:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ft8725_hx.ini \
     vendor/xiaomi/sky/proprietary/recovery/root/vendor/firmware/focaltech_ts_fw_.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/focaltech_ts_fw_.bin \
     vendor/xiaomi/sky/proprietary/recovery/root/vendor/firmware/novatek_ts_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_fw.bin \
     vendor/xiaomi/sky/proprietary/recovery/root/vendor/firmware/novatek_ts_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_mp.bin \
@@ -448,7 +450,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sky/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
     vendor/xiaomi/sky/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
     vendor/xiaomi/sky/proprietary/vendor/firmware/aw87xxx_acf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_acf.bin \
+    vendor/xiaomi/sky/proprietary/vendor/firmware/focaltech_8725_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_8725_fw.bin \
     vendor/xiaomi/sky/proprietary/vendor/firmware/focaltech_ft8720_hx.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ft8720_hx.ini \
+    vendor/xiaomi/sky/proprietary/vendor/firmware/focaltech_ft8725_hx.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ft8725_hx.ini \
     vendor/xiaomi/sky/proprietary/vendor/firmware/focaltech_ts_fw_.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_.bin \
     vendor/xiaomi/sky/proprietary/vendor/firmware/fs1599.fsm:$(TARGET_COPY_OUT_VENDOR)/firmware/fs1599.fsm \
     vendor/xiaomi/sky/proprietary/vendor/firmware/gen6_3_26_0_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/gen6_3_26_0_zap.b00 \
